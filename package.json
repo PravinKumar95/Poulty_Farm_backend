@@ -1,0 +1,10 @@
+{
+  "name": "Poulty_Farm_backend",
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "esbuild": "0.20.1"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=index.js --target=node20 --platform=node --packages=external && tar -a -c -f out.zip index.js"
+  }
+}
